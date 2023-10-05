@@ -22,7 +22,7 @@
 
 - Single Responsibility Principle: 객체를 생성하는 코드와 사용하는 코드를 분리한다.
 - Open/Closed Principle: 기존 코드의 수정 없이도 확장에 용이하다. ex) 새로운 product를 추가하고자 할 때 concrete creator를 추가하고 팩터리 메서드를 오버라이드하기만 하면 된다.
-- Decoupling: creator와 concrete product 사이의 의존성이 감소한다.
+- Decoupling: client code와 concrete product 사이의 의존성이 감소한다.
 - 서로 호환되지 않는 Product가 생성될 염려가 없다.[^abstract_factory_only]
 
 ## Cons
@@ -32,7 +32,9 @@
 ## References
 
 - [Refactoring Guru][reference_link_0]
+- [QianMo github repo][reference_link_1]
 
 [reference_link_0]: https://refactoring.guru/design-patterns/factory-method
+[reference_link_1]: https://github.com/QianMo/Unity-Design-Pattern/blob/master/Assets/Creational%20Patterns/Factory%20Method%20Pattern/README.md
 
 [^abstract_factory_only]: 추상 팩토리에만 해당함.
