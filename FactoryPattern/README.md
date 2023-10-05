@@ -1,4 +1,4 @@
-# Factory pattern
+# Factory Method
 
 > Factory Method is a creational design pattern that provides an interface for creating objects in a superclass,
 > but allows subclasses to alter the type of objects that will be created.
@@ -10,17 +10,29 @@
 - Creator는 객체 생성기능 이외에도 관련된 비즈니스 로직을 포함할 수 있다.
 - 팩토리 메서드에서 항상 객체를 생성하지 않고 오브젝트 풀링 등으로 기존에 생성된 객체를 반환하도록 구현할 수도 있다.
 
+<img src="./images/factory_method_structure.png" width="400px" height="200px" title="Factory Method Structure"/>
+
+# Abstract Factory
+
+> Abstract Factory is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
+
+<img src="./images/abstract_factory_structure.png" width="400px" height="200px" title="Abstract Factory Structure"/>
 
 ## Pros
 
 - Single Responsibility Principle: 객체를 생성하는 코드와 사용하는 코드를 분리한다.
 - Open/Closed Principle: 기존 코드의 수정 없이도 확장에 용이하다. ex) 새로운 product를 추가하고자 할 때 concrete creator를 추가하고 팩터리 메서드를 오버라이드하기만 하면 된다.
-- 디커플링: creator와 concrete product 사이의 의존성이 감소한다.
+- Decoupling: creator와 concrete product 사이의 의존성이 감소한다.
+- 서로 호환되지 않는 Product가 생성될 염려가 없다.[^abstract_factory_only]
 
 ## Cons
 
-- 구현해야할 자식 클래스가 많아지게 되면 코드 복잡도가 증가한다.
+- 코드 복잡도가 증가한다.
 
+## References
 
+- [Refactoring Guru][reference_link_0]
 
-- https://refactoring.guru/design-patterns/factory-method
+[reference_link_0]: https://refactoring.guru/design-patterns/factory-method
+
+[^abstract_factory_only]: 추상 팩토리에만 해당함.
