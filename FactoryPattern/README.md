@@ -10,13 +10,13 @@
 - Creator는 객체 생성기능 이외에도 관련된 비즈니스 로직을 포함할 수 있다.
 - 팩토리 메서드에서 항상 객체를 생성하지 않고 오브젝트 풀링 등으로 기존에 생성된 객체를 반환하도록 구현할 수도 있다.
 
-<img src="./images/factory_method_structure.png" width="400px" height="200px" title="Factory Method Structure"/>
+<img src="./images/factory_method_structure.png" width="600px" height="350px" title="Factory Method Structure"/>
 
 # Abstract Factory
 
 > Abstract Factory is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
 
-<img src="./images/abstract_factory_structure.png" width="400px" height="200px" title="Abstract Factory Structure"/>
+<img src="./images/abstract_factory_structure.png" width="600px" height="350px" title="Abstract Factory Structure"/>
 
 ## Pros
 
